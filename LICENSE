@@ -20,145 +20,254 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
+================================================================================
 
-## Third-Party Licenses
+THIRD-PARTY LICENSES
 
 This software uses the following open source packages.
 
----
+================================================================================
 
-### MIT License
+MIT License
 
 The following packages are licensed under the MIT License:
 
-**Frontend**
-- [Next.js](https://github.com/vercel/next.js) — Copyright (c) Vercel, Inc.
-- [React](https://github.com/facebook/react) — Copyright (c) Meta Platforms, Inc. and affiliates.
-- [React DOM](https://github.com/facebook/react) — Copyright (c) Meta Platforms, Inc. and affiliates.
-- [Chart.js](https://github.com/chartjs/Chart.js) — Copyright (c) Chart.js Contributors
-- [react-chartjs-2](https://github.com/reactchartjs/react-chartjs-2) — Copyright (c) Jeremy Ayerst
-- [lucide-react](https://github.com/lucide-icons/lucide) — Copyright (c) Lucide Contributors
-- [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped) — Copyright (c) Microsoft Corporation
-- [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped) — Copyright (c) Microsoft Corporation
-- [@types/react-dom](https://github.com/DefinitelyTyped/DefinitelyTyped) — Copyright (c) Microsoft Corporation
-- [@types/leaflet](https://github.com/DefinitelyTyped/DefinitelyTyped) — Copyright (c) Microsoft Corporation
-- [ESLint](https://github.com/eslint/eslint) — Copyright (c) OpenJS Foundation and other contributors
-- [eslint-config-next](https://github.com/vercel/next.js) — Copyright (c) Vercel, Inc.
+Frontend:
+  Next.js             (https://github.com/vercel/next.js)
+                      Copyright (c) Vercel, Inc.
+  React               (https://github.com/facebook/react)
+                      Copyright (c) Meta Platforms, Inc. and affiliates.
+  React DOM           (https://github.com/facebook/react)
+                      Copyright (c) Meta Platforms, Inc. and affiliates.
+  Chart.js            (https://github.com/chartjs/Chart.js)
+                      Copyright (c) Chart.js Contributors
+  react-chartjs-2     (https://github.com/reactchartjs/react-chartjs-2)
+                      Copyright (c) Jeremy Ayerst
+  lucide-react        (https://github.com/lucide-icons/lucide)
+                      Copyright (c) Lucide Contributors
+  @types/node         (https://github.com/DefinitelyTyped/DefinitelyTyped)
+                      Copyright (c) Microsoft Corporation
+  @types/react        (https://github.com/DefinitelyTyped/DefinitelyTyped)
+                      Copyright (c) Microsoft Corporation
+  @types/react-dom    (https://github.com/DefinitelyTyped/DefinitelyTyped)
+                      Copyright (c) Microsoft Corporation
+  @types/leaflet      (https://github.com/DefinitelyTyped/DefinitelyTyped)
+                      Copyright (c) Microsoft Corporation
+  ESLint              (https://github.com/eslint/eslint)
+                      Copyright (c) OpenJS Foundation and other contributors
+  eslint-config-next  (https://github.com/vercel/next.js)
+                      Copyright (c) Vercel, Inc.
 
-**Backend (Go)**
-- [gin-gonic/gin](https://github.com/gin-gonic/gin) — Copyright (c) 2014 Manuel Martínez-Almeida
-- [gin-contrib/sse](https://github.com/gin-contrib/sse) — Copyright (c) 2014 Manuel Martínez-Almeida
-- [gabriel-vasile/mimetype](https://github.com/gabriel-vasile/mimetype) — Copyright (c) 2018 Gabriel Vasile
-- [go-playground/locales](https://github.com/go-playground/locales) — Copyright (c) 2016 Go Playground
-- [go-playground/universal-translator](https://github.com/go-playground/universal-translator) — Copyright (c) 2016 Go Playground
-- [go-playground/validator](https://github.com/go-playground/validator) — Copyright (c) 2015 Dean Karn
-- [goccy/go-json](https://github.com/goccy/go-json) — Copyright (c) 2020 Masaaki Goshi
-- [goccy/go-yaml](https://github.com/goccy/go-yaml) — Copyright (c) 2019 Masaaki Goshi
-- [jinzhu/inflection](https://github.com/jinzhu/inflection) — Copyright (c) 2015 Jinzhu
-- [jinzhu/now](https://github.com/jinzhu/now) — Copyright (c) 2013 jinzhu
-- [joho/godotenv](https://github.com/joho/godotenv) — Copyright (c) 2013 John Barton
-- [json-iterator/go](https://github.com/json-iterator/go) — Copyright (c) 2016 json-iterator
-- [klauspost/cpuid](https://github.com/klauspost/cpuid) — Copyright (c) 2015 Klaus Post
-- [leodido/go-urn](https://github.com/leodido/go-urn) — Copyright (c) 2018 leeodido
-- [mattn/go-isatty](https://github.com/mattn/go-isatty) — Copyright (c) Yasuhiro MATSUMOTO
-- [pelletier/go-toml](https://github.com/pelletier/go-toml) — Copyright (c) 2013-2021 Thomas Pelletier, Eric Anderton
-- [quic-go/qpack](https://github.com/quic-go/qpack) — Copyright (c) 2019 quic-go Authors
-- [quic-go/quic-go](https://github.com/quic-go/quic-go) — Copyright (c) 2016 QUIC-Go Authors
-- [ugorji/go/codec](https://github.com/ugorji/go) — Copyright (c) 2012-2020 Ugorji Nwoke
-- [gorm.io/gorm](https://github.com/go-gorm/gorm) — Copyright (c) 2013-NOW Jinzhu
-- [gorm.io/driver/mysql](https://github.com/go-gorm/mysql) — Copyright (c) 2013-NOW Jinzhu
+Backend (Go):
+  gin-gonic/gin                    (https://github.com/gin-gonic/gin)
+                                   Copyright (c) 2014 Manuel Martinez-Almeida
+  gin-contrib/sse                  (https://github.com/gin-contrib/sse)
+                                   Copyright (c) 2014 Manuel Martinez-Almeida
+  gabriel-vasile/mimetype          (https://github.com/gabriel-vasile/mimetype)
+                                   Copyright (c) 2018 Gabriel Vasile
+  go-playground/locales            (https://github.com/go-playground/locales)
+                                   Copyright (c) 2016 Go Playground
+  go-playground/universal-translator
+                                   (https://github.com/go-playground/universal-translator)
+                                   Copyright (c) 2016 Go Playground
+  go-playground/validator          (https://github.com/go-playground/validator)
+                                   Copyright (c) 2015 Dean Karn
+  goccy/go-json                    (https://github.com/goccy/go-json)
+                                   Copyright (c) 2020 Masaaki Goshi
+  goccy/go-yaml                    (https://github.com/goccy/go-yaml)
+                                   Copyright (c) 2019 Masaaki Goshi
+  jinzhu/inflection                (https://github.com/jinzhu/inflection)
+                                   Copyright (c) 2015 Jinzhu
+  jinzhu/now                       (https://github.com/jinzhu/now)
+                                   Copyright (c) 2013 jinzhu
+  joho/godotenv                    (https://github.com/joho/godotenv)
+                                   Copyright (c) 2013 John Barton
+  json-iterator/go                 (https://github.com/json-iterator/go)
+                                   Copyright (c) 2016 json-iterator
+  klauspost/cpuid                  (https://github.com/klauspost/cpuid)
+                                   Copyright (c) 2015 Klaus Post
+  leodido/go-urn                   (https://github.com/leodido/go-urn)
+                                   Copyright (c) 2018 leeodido
+  mattn/go-isatty                  (https://github.com/mattn/go-isatty)
+                                   Copyright (c) Yasuhiro MATSUMOTO
+  pelletier/go-toml                (https://github.com/pelletier/go-toml)
+                                   Copyright (c) 2013-2021 Thomas Pelletier, Eric Anderton
+  quic-go/qpack                    (https://github.com/quic-go/qpack)
+                                   Copyright (c) 2019 quic-go Authors
+  quic-go/quic-go                  (https://github.com/quic-go/quic-go)
+                                   Copyright (c) 2016 QUIC-Go Authors
+  ugorji/go/codec                  (https://github.com/ugorji/go)
+                                   Copyright (c) 2012-2020 Ugorji Nwoke
+  gorm.io/gorm                     (https://github.com/go-gorm/gorm)
+                                   Copyright (c) 2013-NOW Jinzhu
+  gorm.io/driver/mysql             (https://github.com/go-gorm/mysql)
+                                   Copyright (c) 2013-NOW Jinzhu
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
----
+================================================================================
 
-### BSD 2-Clause License
+BSD 2-Clause License
 
 The following packages are licensed under the BSD 2-Clause "Simplified" License:
 
-- [Leaflet](https://github.com/Leaflet/Leaflet) — Copyright (c) 2010-2023 Vladimir Agafonkin, Copyright (c) 2010-2011 CloudMade
+  Leaflet  (https://github.com/Leaflet/Leaflet)
+           Copyright (c) 2010-2023 Vladimir Agafonkin
+           Copyright (c) 2010-2011 CloudMade
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
 
----
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-### BSD 3-Clause License
+================================================================================
 
-The following packages are licensed under the BSD 3-Clause "New" or "Revised" License:
+BSD 3-Clause License
 
-- [filippo.io/edwards25519](https://github.com/FiloSottile/edwards25519) — Copyright (c) 2019 The Go Authors
-- [twitchyliquid64/golang-asm](https://github.com/twitchyliquid64/golang-asm) — Copyright (c) 2009 The Go Authors
-- [golang.org/x/arch](https://github.com/golang/arch) — Copyright (c) 2009 The Go Authors
-- [golang.org/x/crypto](https://github.com/golang/crypto) — Copyright (c) 2009 The Go Authors
-- [golang.org/x/net](https://github.com/golang/net) — Copyright (c) 2009 The Go Authors
-- [golang.org/x/sys](https://github.com/golang/sys) — Copyright (c) 2009 The Go Authors
-- [golang.org/x/text](https://github.com/golang/text) — Copyright (c) 2009 The Go Authors
-- [google.golang.org/protobuf](https://github.com/protocolbuffers/protobuf-go) — Copyright (c) 2018 The Go Authors
+The following packages are licensed under the BSD 3-Clause "New" or "Revised"
+License:
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+  filippo.io/edwards25519       (https://github.com/FiloSottile/edwards25519)
+                                Copyright (c) 2019 The Go Authors
+  twitchyliquid64/golang-asm    (https://github.com/twitchyliquid64/golang-asm)
+                                Copyright (c) 2009 The Go Authors
+  golang.org/x/arch             (https://github.com/golang/arch)
+                                Copyright (c) 2009 The Go Authors
+  golang.org/x/crypto           (https://github.com/golang/crypto)
+                                Copyright (c) 2009 The Go Authors
+  golang.org/x/net              (https://github.com/golang/net)
+                                Copyright (c) 2009 The Go Authors
+  golang.org/x/sys              (https://github.com/golang/sys)
+                                Copyright (c) 2009 The Go Authors
+  golang.org/x/text             (https://github.com/golang/text)
+                                Copyright (c) 2009 The Go Authors
+  google.golang.org/protobuf    (https://github.com/protocolbuffers/protobuf-go)
+                                Copyright (c) 2018 The Go Authors
 
-1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
 
----
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
 
-### Apache License 2.0
+3. Neither the name of the copyright holder nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+================================================================================
+
+Apache License 2.0
 
 The following packages are licensed under the Apache License, Version 2.0:
 
-- [TypeScript](https://github.com/microsoft/TypeScript) — Copyright (c) Microsoft Corporation
-- [bytedance/gopkg](https://github.com/bytedance/gopkg) — Copyright (c) 2021 ByteDance Inc.
-- [bytedance/sonic](https://github.com/bytedance/sonic) — Copyright (c) 2021 ByteDance Inc.
-- [bytedance/sonic/loader](https://github.com/bytedance/sonic) — Copyright (c) 2021 ByteDance Inc.
-- [cloudwego/base64x](https://github.com/cloudwego/base64x) — Copyright (c) 2021 CloudWeGo Authors
-- [modern-go/concurrent](https://github.com/modern-go/concurrent) — Copyright (c) 2018 Tao Wen
-- [modern-go/reflect2](https://github.com/modern-go/reflect2) — Copyright (c) 2018 Tao Wen
-- [go.mongodb.org/mongo-driver/v2](https://github.com/mongodb/mongo-go-driver) — Copyright (c) 2018 MongoDB, Inc.
+  TypeScript                 (https://github.com/microsoft/TypeScript)
+                             Copyright (c) Microsoft Corporation
+  bytedance/gopkg            (https://github.com/bytedance/gopkg)
+                             Copyright (c) 2021 ByteDance Inc.
+  bytedance/sonic            (https://github.com/bytedance/sonic)
+                             Copyright (c) 2021 ByteDance Inc.
+  bytedance/sonic/loader     (https://github.com/bytedance/sonic)
+                             Copyright (c) 2021 ByteDance Inc.
+  cloudwego/base64x          (https://github.com/cloudwego/base64x)
+                             Copyright (c) 2021 CloudWeGo Authors
+  modern-go/concurrent       (https://github.com/modern-go/concurrent)
+                             Copyright (c) 2018 Tao Wen
+  modern-go/reflect2         (https://github.com/modern-go/reflect2)
+                             Copyright (c) 2018 Tao Wen
+  go.mongodb.org/mongo-driver/v2
+                             (https://github.com/mongodb/mongo-go-driver)
+                             Copyright (c) 2018 MongoDB, Inc.
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License. You may obtain a copy of
+the License at:
 
-https://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
 
----
+================================================================================
 
-### Mozilla Public License 2.0 (MPL-2.0)
+Mozilla Public License 2.0 (MPL-2.0)
 
 The following packages are licensed under the Mozilla Public License 2.0:
 
-- [go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) — Copyright (c) 2013 The Go-MySQL-Driver Authors
+  go-sql-driver/mysql  (https://github.com/go-sql-driver/mysql)
+                       Copyright (c) 2013 The Go-MySQL-Driver Authors
 
-This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+This Source Code Form is subject to the terms of the Mozilla Public License,
+v. 2.0. If a copy of the MPL was not distributed with this file, You can
+obtain one at https://mozilla.org/MPL/2.0/.
 
----
+================================================================================
 
-### Hippocratic License 2.1
+Hippocratic License 2.1
 
 The following packages are licensed under the Hippocratic License 2.1:
 
-- [react-leaflet](https://github.com/PaulLeCam/react-leaflet) — Copyright (c) Paul Le Cam
+  react-leaflet  (https://github.com/PaulLeCam/react-leaflet)
+                 Copyright (c) Paul Le Cam
 
-For the full license text, see: https://firstdonoharm.dev/version/2/1/license.html
+For the full license text, see:
+    https://firstdonoharm.dev/version/2/1/license.html
 
----
+================================================================================
 
-### Open-Meteo API
+Open-Meteo API
 
-Weather data is provided by [Open-Meteo](https://open-meteo.com/) under the
-[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+Weather data is provided by Open-Meteo (https://open-meteo.com/) under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+    https://creativecommons.org/licenses/by/4.0/
 
 Attribution: Weather data provided by Open-Meteo.com
