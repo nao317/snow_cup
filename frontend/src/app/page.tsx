@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AlertTriangle, ArrowLeft, RefreshCw, Loader2 } from "lucide-react";
 import Header from "@/components/Header/Header";
 import SearchBar from "@/components/SearchBar/SearchBar";
 import CurrentWeather from "@/components/CurrentWeather/CurrentWeather";
@@ -29,14 +30,15 @@ function WeatherSection({ location }: { location: Location }) {
     <div className={styles.weatherSection}>
       {isLoading && (
         <div className={styles.loading}>
-          <span className={styles.loadingSpinner} />
+          <Loader2 className={styles.loadingSpinner} size={24} />
           <span>気象データを取得中...</span>
         </div>
       )}
 
       {error && (
         <div className={styles.error}>
-          <p>⚠️ {error}</p>
+          <AlertTriangle size={16} />
+          <p>{error}</p>
           <button className={styles.retryBtn} onClick={refresh}>
             再試行
           </button>
@@ -64,7 +66,10 @@ function WeatherSection({ location }: { location: Location }) {
             <SnowChart hourly={data.hourly} />
           </div>
 
-          <p className={styles.autoRefresh}>⟳ 5分ごとに自動更新されます</p>
+          <p className={styles.autoRefresh}>
+            <RefreshCw size={13} />
+            5分ごとに自動更新されます
+          </p>
         </>
       )}
     </div>
@@ -117,7 +122,8 @@ export default function HomePage() {
                 className={styles.backBtn}
                 onClick={() => setSelectedLocation(null)}
               >
-                ← 一覧に戻る
+                <ArrowLeft size={16} />
+                一覧に戻る
               </button>
             </div>
             <WeatherSection location={selectedLocation} />

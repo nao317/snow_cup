@@ -19,6 +19,13 @@
   font-size: 0.9rem;
   color: #a8c4f0;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.locationIcon {
+  flex-shrink: 0;
 }
 
 .weather {
@@ -46,7 +53,10 @@
 }
 
 .itemIcon {
-  font-size: 1.5rem;
+  color: #93c5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .itemValue {

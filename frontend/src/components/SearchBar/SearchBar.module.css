@@ -21,7 +21,7 @@
 }
 
 .icon {
-  font-size: 1rem;
+  color: #64748b;
   flex-shrink: 0;
 }
 
@@ -39,14 +39,9 @@
 }
 
 .spinner {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #c7d9f5;
-  border-top-color: #3b82f6;
-  border-radius: 50%;
-  animation: spin 0.7s linear infinite;
+  color: #3b82f6;
   flex-shrink: 0;
+  animation: spin 0.7s linear infinite;
 }
 
 @keyframes spin {
@@ -58,10 +53,11 @@
   border: none;
   cursor: pointer;
   color: #94a3b8;
-  font-size: 0.85rem;
   padding: 0;
   line-height: 1;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 .clearBtn:hover {
@@ -93,7 +89,6 @@
 
 .item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0.6rem 1rem;
   cursor: pointer;
@@ -106,10 +101,16 @@
   outline: none;
 }
 
+.itemIcon {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
 .itemName {
   font-size: 0.95rem;
   font-weight: 500;
   color: #1e293b;
+  flex: 1;
 }
 
 .itemSub {

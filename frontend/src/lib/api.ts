@@ -5,8 +5,8 @@ const API_BASE = process.env.NEXT_PUBLIC_API_URL
   ? `${process.env.NEXT_PUBLIC_API_URL}/api`
   : "/api";
 
-async function fetchJSON<T>(url: string): Promise<T> {
-  const res = await fetch(url, { cache: "no-store" });
+async function fetchJSON<T>(url: string, signal?: AbortSignal): Promise<T> {
+  const res = await fetch(url, { cache: "no-store", signal });
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
     throw new Error(body.error ?? `Request failed: ${res.status}`);
@@ -15,9 +15,13 @@ async function fetchJSON<T>(url: string): Promise<T> {
 }
 
 /** 地名検索 */
-export async function searchGeocoding(name: string): Promise<GeocodingResponse> {
-  const params = new URLSearchParams({ name });
-  return fetchJSON<GeocodingResponse>(`${API_BASE}/geocoding?${params}`);
+export async function searchGeocoding(
+  name: string,
+  lang = "en",
+  signal?: AbortSignal
+): Promise<GeocodingResponse> {
+  const params = new URLSearchParams({ name, lang });
+  return fetchJSON<GeocodingResponse>(`${API_BASE}/geocoding?${params}`, signal);
 }
 
 /** 気象データ取得 */

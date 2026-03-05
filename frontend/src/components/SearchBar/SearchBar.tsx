@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
+import { Search, X, MapPin, Loader2 } from "lucide-react";
 import { useGeocoding } from "@/hooks/useGeocoding";
 import { Location } from "@/types/location";
 import styles from "./SearchBar.module.css";
@@ -35,7 +36,7 @@ export default function SearchBar({ onSelect }: SearchBarProps) {
   return (
     <div className={styles.container} ref={containerRef}>
       <div className={styles.inputWrapper}>
-        <span className={styles.icon}>🔍</span>
+        <Search className={styles.icon} size={18} />
         <input
           type="text"
           className={styles.input}
@@ -46,19 +47,25 @@ export default function SearchBar({ onSelect }: SearchBarProps) {
           aria-autocomplete="list"
           aria-expanded={results.length > 0}
         />
-        {isLoading && <span className={styles.spinner} aria-label="検索中" />}
-        {query && (
+        {isLoading && (
+          <Loader2 className={styles.spinner} size={16} aria-label="検索中" />
+        )}
+        {query && !isLoading && (
           <button
             className={styles.clearBtn}
             onClick={clear}
             aria-label="クリア"
           >
-            ✕
+            <X size={16} />
           </button>
         )}
       </div>
 
-      {error && <p className={styles.error}>⚠ {error}</p>}
+      {error && (
+        <p className={styles.error}>
+          <X size={14} /> {error}
+        </p>
+      )}
 
       {results.length > 0 && (
         <ul className={styles.dropdown} role="listbox">
@@ -71,6 +78,7 @@ export default function SearchBar({ onSelect }: SearchBarProps) {
               onKeyDown={(e) => e.key === "Enter" && handleSelect(loc)}
               tabIndex={0}
             >
+              <MapPin className={styles.itemIcon} size={14} />
               <span className={styles.itemName}>{loc.name}</span>
               <span className={styles.itemSub}>
                 {[loc.admin1, loc.country].filter(Boolean).join(", ")}
@@ -82,3 +90,8 @@ export default function SearchBar({ onSelect }: SearchBarProps) {
     </div>
   );
 }
+
+interface SearchBarProps {
+  onSelect: (location: Location) => void;
+}
+

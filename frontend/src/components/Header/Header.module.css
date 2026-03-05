@@ -14,8 +14,8 @@
 }
 
 .logo {
-  font-size: 2rem;
-  line-height: 1;
+  color: #93c5fd;
+  flex-shrink: 0;
 }
 
 .title {

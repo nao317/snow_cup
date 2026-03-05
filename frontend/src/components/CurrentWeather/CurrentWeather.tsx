@@ -1,3 +1,4 @@
+import { Thermometer, CloudSnow, Layers, MapPin } from "lucide-react";
 import { WeatherResponse } from "@/types/weather";
 import { describeWeatherCode, round1 } from "@/lib/utils";
 import styles from "./CurrentWeather.module.css";
@@ -15,17 +16,17 @@ export default function CurrentWeather({
 
   const items = [
     {
-      icon: "🌡️",
+      icon: <Thermometer size={28} strokeWidth={1.5} />,
       label: "気温",
       value: `${round1(current.temperature_2m)} °C`,
     },
     {
-      icon: "🌨️",
+      icon: <CloudSnow size={28} strokeWidth={1.5} />,
       label: "降雪量",
       value: `${round1(current.snowfall)} cm/h`,
     },
     {
-      icon: "❄️",
+      icon: <Layers size={28} strokeWidth={1.5} />,
       label: "積雪深",
       value: `${round1(current.snow_depth)} cm`,
     },
@@ -34,7 +35,10 @@ export default function CurrentWeather({
   return (
     <div className={styles.card}>
       <div className={styles.header}>
-        <span className={styles.location}>📍 {locationName ?? `${data.latitude.toFixed(2)}, ${data.longitude.toFixed(2)}`}</span>
+        <span className={styles.location}>
+          <MapPin size={14} className={styles.locationIcon} />
+          {locationName ?? `${data.latitude.toFixed(2)}, ${data.longitude.toFixed(2)}`}
+        </span>
         <span className={styles.weather}>
           {describeWeatherCode(current.weather_code)}
         </span>

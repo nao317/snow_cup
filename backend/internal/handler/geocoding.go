@@ -18,9 +18,10 @@ func NewGeocodingHandler(gs *service.GeocodingService) *GeocodingHandler {
 }
 
 // Search 地名から候補地点を検索するエンドポイント
-// GET /api/geocoding?name={地名}
+// GET /api/geocoding?name={地名}&lang={言語コード}
 func (h *GeocodingHandler) Search(c *gin.Context) {
 	name := c.Query("name")
+	lang := c.Query("lang") // 省略可（デフォルト: en）
 
 	if name == "" {
 		c.JSON(http.StatusBadRequest, gin.H{
@@ -29,7 +30,7 @@ func (h *GeocodingHandler) Search(c *gin.Context) {
 		return
 	}
 
-	result, err := h.geocodingService.Search(name)
+	result, err := h.geocodingService.Search(name, lang)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
 			"error": err.Error(),
