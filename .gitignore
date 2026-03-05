@@ -1,0 +1,22 @@
+# 環境変数
+.env
+backend/.env
+
+# バイナリ
+backend/server
+*.exe
+
+# Go関連
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEなど
+.idea/
+.vscode/
+
+# Node.js (frontend用)
+node_modules/
+.next/
