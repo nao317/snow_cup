@@ -6,7 +6,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Snowflake className={styles.logo} size={32} strokeWidth={1.5} />
-        <h1 className={styles.title}>Snow Cup</h1>
+        <h1 className={styles.title}>Snow</h1>
         <p className={styles.sub}>世界の降雪情報をリアルタイムで</p>
       </div>
     </header>
